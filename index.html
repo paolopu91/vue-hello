@@ -16,7 +16,13 @@
         </div>
 
         <div class="container">
-            <img v-for="img in images" :src="img" alt="">
+            <input type="text" v-model="textHello">
+            <button class="btn btn-primary" @click="miaFunzione">Click</button>
+            <p> contenuto del nostro input: <span class="text-danger"> {{ textHello }} </span>  </p>
+        </div>
+
+        <div class="container">
+            
         </div>  
     </div>
 

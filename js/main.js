@@ -2,9 +2,18 @@ new Vue(
     {
         el: '#root',
         data: {
+            textHello:"Hello, write here",
             messaggio: "Welcome in Vue Js",
+            seen: true,
         },
-            immagine :['https://www.laramind.com/blog/wp-content/uploads/2019/05/1_nq9cdMxtdhQ0ZGL8OuSCUQ.jpg',
-            'https://www.laramind.com/blog/wp-content/uploads/2019/05/1_nq9cdMxtdhQ0ZGL8OuSCUQ.jpg']
-    }
+        methods: {
+            miaFunzione : function(){
+                console.log(this.textHello);
+               return this.textHello;
+            }
+
+        }
+            
+    },
+
 );
